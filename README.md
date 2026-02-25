@@ -64,5 +64,5 @@ http://localhost:8501
 ### Prediction Result
 ![Prediction](screenshots/prediction.png)
 
-### Summary Output
+### CSV File Output
 ![Summary](screenshots/result.png)
