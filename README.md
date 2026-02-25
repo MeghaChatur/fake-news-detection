@@ -10,16 +10,19 @@ The system uses Natural Language Processing (NLP) and Machine Learning models to
 **1️⃣ Clone Repository**
 
 git clone https://github.com/MeghaChatur/fake-news-detection.git
+
 cd fake-news-detection
 
 **2️⃣ Create Virtual Environment**
 
-Windows:
+**Windows:**
 
 python -m venv venv
+
 venv\Scripts\activate
 
 **3️⃣ Install Dependencies**
+
 **Option A: ML Models Only (Logistic Regression & SVM)**
     pip install -r requirements-ml.txt
 
@@ -32,20 +35,22 @@ venv\Scripts\activate
 
 python -m src.prepare_data --input data/raw.csv --output data/cleaned.csv
 
-Train Logistic Regression:
+**Train Logistic Regression:**
 
 python -m src.train_tfidf --data data/cleaned.csv --model lr
 
-Train SVM:
+**Train SVM:**
 
 python -m src.train_tfidf --data data/cleaned.csv --model svm
 
-Train BERT (optional):
+**Train BERT (optional):**
 
 python -m src.train_bert --data data/cleaned.csv --out models/bert_distilbert
 
-▶️ Run Application
+**▶️ Run Application**
+
 streamlit run app/streamlit_app.py
 
-Open browser:
+**Open browser:**
+
 http://localhost:8501
