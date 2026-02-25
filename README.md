@@ -34,23 +34,23 @@ venv\Scripts\activate
 
 **Prepare dataset:**
 
-python -m src.prepare_data --input data/raw.csv --output data/cleaned.csv
+    python -m src.prepare_data --input data/raw.csv --output data/cleaned.csv
 
 **Train Logistic Regression:**
 
-python -m src.train_tfidf --data data/cleaned.csv --model lr
+    python -m src.train_tfidf --data data/cleaned.csv --model lr
 
 **Train SVM:**
 
-python -m src.train_tfidf --data data/cleaned.csv --model svm
+    python -m src.train_tfidf --data data/cleaned.csv --model svm
 
 **Train BERT (optional):**
 
-python -m src.train_bert --data data/cleaned.csv --out models/bert_distilbert
+    python -m src.train_bert --data data/cleaned.csv --out models/bert_distilbert
 
 **▶️ Run Application**
 
-streamlit run app/streamlit_app.py
+    streamlit run app/streamlit_app.py
 
 **Open browser:**
 
