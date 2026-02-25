@@ -1,8 +1,7 @@
 **📰 Fake News Detection using Machine Learning & NLP**
 
-**📌 Project Overview**
-
 Misinformation spreads rapidly through online platforms and social media, making it difficult for students to distinguish between reliable and fake news. This project provides an AI-powered solution that analyzes news articles, predicts their credibility, and generates concise summaries to help users understand information quickly and accurately.
+
 The system uses Natural Language Processing (NLP) and Machine Learning models to classify news as REAL or FAKE, along with a confidence score and automated article summarization.
 
 **⚙️ Installation & Setup**
@@ -24,9 +23,11 @@ venv\Scripts\activate
 **3️⃣ Install Dependencies**
 
 **Option A: ML Models Only (Logistic Regression & SVM)**
+
     pip install -r requirements-ml.txt
 
 **Option B: ML + BERT Models**
+
     pip install -r requirements-bert.txt
 
 **🏋️ Model Training**
