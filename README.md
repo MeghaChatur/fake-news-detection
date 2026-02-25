@@ -55,3 +55,14 @@ venv\Scripts\activate
 **Open browser:**
 
 http://localhost:8501
+
+## 📸 Project Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Prediction Result
+![Prediction](screenshots/prediction.png)
+
+### Summary Output
+![Summary](screenshots/result.png)
