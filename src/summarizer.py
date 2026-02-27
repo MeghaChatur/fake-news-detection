@@ -1,15 +1,23 @@
 from transformers import pipeline
+import streamlit as st
 
-# Load summarization model
-summarizer = pipeline(
-    "summarization",
-    model="sshleifer/distilbart-cnn-6-6"
-)
+
+# ✅ Load model only once (Streamlit safe)
+@st.cache_resource
+def load_summarizer():
+    return pipeline(
+        task="summarization",
+        model="sshleifer/distilbart-cnn-6-6",
+        device=-1   # force CPU for Streamlit Cloud
+    )
+
 
 def generate_summary(text):
 
     if len(text.strip()) < 30:
         return "Text too short to summarize."
+
+    summarizer = load_summarizer()
 
     summary = summarizer(
         text,
@@ -19,4 +27,4 @@ def generate_summary(text):
         truncation=True
     )
 
-    return summary[0]['summary_text']
+    return summary[0]["summary_text"]
