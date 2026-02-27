@@ -4,6 +4,4 @@ numpy==1.26.4
 scikit-learn==1.4.2
 nltk==3.8.1
 joblib==1.4.2
-transformers==4.41.2
-torch==2.3.0
 rich==13.7.1
