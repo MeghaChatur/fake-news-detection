@@ -5,6 +5,5 @@ numpy
 scikit-learn
 nltk
 joblib
-transformers==4.41.2
-torch==2.2.2
+transformers
 sentencepiece
