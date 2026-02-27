@@ -1,10 +1,7 @@
-streamlit==1.29.0
-altair==4.2.2
+streamlit
+transformers
+torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu
+scikit-learn
 pandas
 numpy
-scikit-learn
-nltk
 joblib
-transformers
-torch
-sentencepiece
