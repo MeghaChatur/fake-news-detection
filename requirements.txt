@@ -5,6 +5,6 @@ numpy
 scikit-learn
 nltk
 joblib
-transformers
-torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu
-sentencepiece
+transformers==4.41.2
+torch==2.5.1
+rich<14
